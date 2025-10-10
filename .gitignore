@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+test.js
+test.ts
+test-manager.js
+dist/
+*.log
+.DS_Store
+.nuxt
+.idea
+gitcommit.fish
+
+.env.test
+.env
+.next
