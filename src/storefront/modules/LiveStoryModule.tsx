@@ -23,7 +23,7 @@ export function LiveStoryModule({
   useEffect(() => setMounted(true), []);
 
   if (!module.id || !module.type) {
-    console.log("No module LS", module);
+    console.log("livestory-sanity-sdk npm: no LS module", module);
     return null;
   }
 

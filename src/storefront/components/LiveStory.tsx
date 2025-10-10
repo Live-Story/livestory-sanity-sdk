@@ -23,7 +23,7 @@ export default function LiveStory({ value, language }: LiveStoryProps) {
       const runLiveStory = () => {
         if ((window as any).LiveStory) {
           new (window as any).LiveStory(`ls-${id}`, { type });
-          console.log("livestory-sanity npm: LS initialized");
+          console.log("livestory-sanity-sdk npm: LS initialized");
         }
       };
 
