@@ -8,7 +8,7 @@
 ## Installation
 
 ```sh
-npm install livestory-sanity-sdk # yarn add livestory-sanity
+npm install livestory-sanity-sdk # yarn add livestory-sanity-sdk
 ```
 
 #### Compatibility
