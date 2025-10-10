@@ -35,9 +35,9 @@
     "url": "git+https://github.com/Live-Story/livestory-sanity-sdk.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Live Story",
+  "description": "Live Story SDK for Sanity CMS integration on Hydrogen storefronts",
+  "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
