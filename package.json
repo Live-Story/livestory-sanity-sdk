@@ -1,6 +1,6 @@
 {
   "name": "livestory-sanity-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/livestory-sanity.js",
   "module": "./dist/livestory-sanity.js",

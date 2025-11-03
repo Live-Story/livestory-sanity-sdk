@@ -27,10 +27,11 @@ For full usage example, refer to the [Live Sanity Demo Commerce](https://livesto
 // 1. Import the LiveStory Storefront
 import LiveStorySanity from "livestory-sanity-sdk";
 
-<LiveStorySanity.Storefront.LiveStory value={page.liveStory} language="it" />
-
+// use it in your React components as the following
+<LiveStorySanity.Storefront.LiveStory value={page.liveStory} language={language} store={store} />
+```
+```javascript
 // 2. Import single components from Storefront module
-
 import { LiveStoryStoryModule } from "livestory-sanity-sdk/storefront";
 
 import { LiveStory } from "livestory-sanity-sdk/storefront";

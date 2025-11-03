@@ -13,10 +13,12 @@ import LiveStory from "../components/LiveStory";
 
 export function LiveStoryModule({
   module,
-  language
+  language,
+  store,
 }: {
   module: SanityModuleLiveStory;
   language?: string;
+  store?: string;
 }) {
 
   const [mounted, setMounted] = useState(false);
@@ -31,7 +33,7 @@ export function LiveStoryModule({
     <div className="mx-auto min-h-full overflow-hidden">
       {/* Live Story Module */}
       {mounted && (
-        <LiveStory value={{ id: module.id, type: module.type, ssr: module.ssr }} language={language} />
+        <LiveStory value={{ id: module.id, type: module.type, ssr: module.ssr }} language={language} store={store} />
       )}
     </div>
   );

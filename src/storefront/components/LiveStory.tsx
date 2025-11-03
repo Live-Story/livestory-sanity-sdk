@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 type LiveStoryProps = {
   language?: string;
+  store?: string;
   value: {
     title?: string;
     id?: string;
@@ -10,7 +11,7 @@ type LiveStoryProps = {
   };
 };
 
-export default function LiveStory({ value, language }: LiveStoryProps) {
+export default function LiveStory({ value, language, store }: LiveStoryProps) {
   const { id, type, ssr } = value;
 
   const [mounted, setMounted] = useState(false);
@@ -42,6 +43,7 @@ export default function LiveStory({ value, language }: LiveStoryProps) {
           id={`ls-${id}`}
           data-id={id}
           data-lang={language ?? 'default'}
+          data-store={store ?? 'default'}
           style={{ width: "100%" }}
           dangerouslySetInnerHTML={{ __html: ssr ?? '' }}>
         </div>
