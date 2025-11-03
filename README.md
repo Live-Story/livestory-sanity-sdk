@@ -15,7 +15,7 @@ npm install livestory-sanity-sdk # yarn add livestory-sanity-sdk
 
 | Version to install                                                                                                            | Support                                              |
 | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Latest livestory-sanity-sdk                                                                                                    | Storefront for modern browsers + Studio for Node 18+                           |
+| Latest livestory-sanity-sdk                                                                                                    | Storefront for modern browsers + Studio for Node 16+                           |
 
 ## How to use it
 
