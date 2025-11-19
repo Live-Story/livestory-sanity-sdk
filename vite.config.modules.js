@@ -5,7 +5,7 @@ import path from 'path';
 export default defineConfig({
   build: {
     lib: false,
-    outDir: 'dist',
+    outDir: './',
     emptyOutDir: false,
     rollupOptions: {
       input: {
@@ -14,7 +14,7 @@ export default defineConfig({
       },
       preserveModules: true,
       output: {
-        dir: 'dist',
+        dir: './',
         format: 'es',
         entryFileNames: '[name]/index.js'
       },

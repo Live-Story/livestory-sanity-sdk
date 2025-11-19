@@ -1,33 +1,36 @@
 {
   "name": "livestory-sanity-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
-  "main": "./dist/livestory-sanity.js",
-  "module": "./dist/livestory-sanity.js",
-  "types": "./dist/index.d.ts",
+  "main": "./livestory-sanity.js",
+  "module": "./livestory-sanity.js",
+  "types": "./index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/livestory-sanity.js",
-      "types": "./dist/index.d.ts"
+      "import": "./livestory-sanity.js",
+      "types": "./index.d.ts"
     },
     "./storefront": {
-      "import": "./dist/storefront/index.js",
-      "types": "./dist/storefront/index.d.ts"
+      "import": "./storefront/index.js",
+      "types": "./storefront/index.d.ts"
     },
     "./studio": {
-      "import": "./dist/index.node.js",
-      "types": "./dist/studio/index.d.ts"
+      "import": "./studio/index.js",
+      "types": "./studio/index.d.ts"
     }
   },
   "files": [
-    "dist"
+    "studio",
+    "storefront",
+    "livestory-sanity.js",
+    "index.d.ts"
   ],
   "scripts": {
     "build:js:lib": "vite build --config vite.config.js",
     "build:js:modules": "vite build --config vite.config.modules.js",
     "build:types": "tsc --project tsconfig.build.json",
     "build:js": "npm run build:js:lib && npm run build:js:modules",
-    "build": "npm run build:js && npm run build:types",
+    "build": "npm run build:types && npm run build:js",
     "test": "vitest"
   },
   "repository": {

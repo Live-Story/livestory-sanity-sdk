@@ -1,6 +1,6 @@
 import {defineField} from 'sanity'
 
-export default defineField({
+export const LiveStoryObject = defineField({
   type: 'object',
   title: 'Live Story',
   name: 'livestoryBlock',

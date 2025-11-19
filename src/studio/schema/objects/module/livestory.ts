@@ -1,7 +1,7 @@
 import {defineField} from 'sanity'
 import {DocumentIcon} from '@sanity/icons'
 
-export default defineField({
+export const LiveStoryModuleStudio = defineField({
   type: 'object',
   title: 'Live Story',
   icon: DocumentIcon,

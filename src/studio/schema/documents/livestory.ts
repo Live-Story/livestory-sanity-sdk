@@ -1,7 +1,7 @@
 import {DocumentTextIcon} from '@sanity/icons'
 import {defineField,defineType} from 'sanity'
 
-export default defineType({
+export const LiveStoryDocument = defineType({
   name: 'livestory',
   title: 'Live Story',
   type: 'document',

@@ -14,3 +14,10 @@ gitcommit.fish
 .env.test
 .env
 .next
+
+# Distribution folders
+studio/
+storefront/
+livestory-sanity.js
+index.d.ts
+index.js
