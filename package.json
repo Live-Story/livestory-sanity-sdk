@@ -29,7 +29,7 @@
     "build:js:lib": "vite build --config vite.config.js",
     "build:js:modules": "vite build --config vite.config.modules.js",
     "build:types": "tsc --project tsconfig.build.json",
-    "build:js": "npm run build:js:lib && npm run build:js:modules",
+    "build:js": "npm run build:js:lib",
     "build": "npm run build:types && npm run build:js",
     "test": "vitest"
   },
